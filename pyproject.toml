@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentproof"
+version = "1.0.0"
+description = "Zero-overhead cryptographic Proof-of-Execution (PoE) engine for autonomous AI systems within the We Do Care Global governance ecosystem."
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [{name = "Emir Perla", email = "emirperla96@gmail.com"}]
+requires-python = ">=3.11"
+dependencies = [
+    "cryptography>=43.0.0",
+    "pydantic>=2.0.0",
+]
+
+[project.scripts]
+agentproof = "agentproof.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["agentproof"]

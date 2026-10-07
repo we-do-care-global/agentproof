@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: agentproof
+Version: 1.0.0
+Summary: Zero-overhead cryptographic Proof-of-Execution (PoE) engine for autonomous AI systems within the We Do Care Global governance ecosystem.
+Author-email: Emir Perla <emirperla96@gmail.com>
+License: Apache-2.0
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography>=43.0.0
+Requires-Dist: pydantic>=2.0.0
