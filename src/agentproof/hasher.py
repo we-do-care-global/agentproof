@@ -48,7 +48,7 @@ def blake3_digest(data: bytes) -> str:
 
 
 def hash_bytes(data: bytes) -> str:
-    return blake3_digest(data)
+    return sha256_digest(data)
 
 
 def hash_hex(s: str) -> str:
