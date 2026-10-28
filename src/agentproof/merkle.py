@@ -98,7 +98,7 @@ class KeyPair:
         self._public = public_key
 
     @staticmethod
-    def generate() -> KeyPair:
+    def generate() -> "KeyPair":
         private_key = Ed25519PrivateKey.generate()
         public_key = private_key.public_key()
         return KeyPair(private_key, public_key)
@@ -131,6 +131,6 @@ class KeyPair:
     def to_dict(self) -> Dict[str, str]:
         return {
             "public_key_hex": self._public.public_bytes(
-                encoding=ED25519, format=ED25519
+                encoding=Encoding.Raw, format=PublicFormat.Raw
             ).hex(),
         }
