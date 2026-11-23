@@ -12,7 +12,7 @@ authors = [{name = "Emir Perla", email = "emirperla96@gmail.com"}]
 requires-python = ">=3.11"
 dependencies = [
     "cryptography>=50.0.2",
-    "pydantic>=2.14.3",
+    "pydantic>=2.14.4",
 ]
 
 [project.scripts]
